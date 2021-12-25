@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ListButton">
+        <attr name="headerName" format="string" />
+        <attr name="descriptionOfList" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ButtonForList">
+        <attr name="ListHeaderName" format="string" />
+        <attr name="ListDescriptionOfList" format="string" />
+    </declare-styleable>
+</resources>

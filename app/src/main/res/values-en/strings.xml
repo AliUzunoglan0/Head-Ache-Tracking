@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Headache Traking</string>
+
+    <!-- records strings -->
+
+    <string name="starting_time_dots">Başlangıç Saati :</string>
+    <string name="starting_time">Başlangıç Saati</string>
+    <string name="end_time_dots">Bitiş Saati :</string>
+    <string name="end_time">Bitiş Saati</string>
+    <string name="pain_intensity_dots">Ağrı Şiddeti :</string>
+    <string name="pain_intensity">Pain Intensity</string>
+    <string name="homePage">Home</string>
+    <string name="profile">Profile</string>
+    <string name="selected">Selected</string>
+
+    <!-- home strings  -->
+    <string name="start_time_selecting_dots">Başlangıç Saatini Seçiniz :</string>
+    <string name="end_time_selecting_dots">Bitiş Saatini Seçiniz :</string>
+    <string name="select">Seçiniz</string>
+    <string name="save">Save</string>
+
+    <!-- selecting activities strings  -->
+    <string name="pills_label">Select Pills</string>
+    <string name="triggers_label">Select Triggers</string>
+    <string name="symptoms_label">Select Symptoms</string>
+
+</resources>

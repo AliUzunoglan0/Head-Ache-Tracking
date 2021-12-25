@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Bas Agrisi Takip</string>
+
+    <!-- records strings -->
+
+    <string name="starting_time_dots">Başlangıç Saati :</string>
+    <string name="starting_time">Başlangıç Saati</string>
+    <string name="end_time_dots">Bitiş Saati :</string>
+    <string name="end_time">Bitiş Saati</string>
+    <string name="pain_intensity_dots">Ağrı Şiddeti :</string>
+    <string name="pain_intensity">Ağrı Şiddeti</string>
+    <string name="homePage">Anasayfa</string>
+    <string name="profile">Profil</string>
+    <string name="selected">Seçildi</string>
+
+    <!-- home strings  -->
+    <string name="start_time_selecting_dots">Başlangıç Saatini Seçiniz :</string>
+    <string name="end_time_selecting_dots">Bitiş Saatini Seçiniz :</string>
+    <string name="select">Seçiniz</string>
+    <string name="save">Kaydet</string>
+
+    <!-- selecting activities strings  -->
+    <string name="pills_label">İlaçlarınızı Seçiniz</string>
+    <string name="triggers_label">Tetikleyicileri Seçiniz</string>
+    <string name="symptoms_label">Semptomları Seçiniz</string>
+
+
+</resources>
