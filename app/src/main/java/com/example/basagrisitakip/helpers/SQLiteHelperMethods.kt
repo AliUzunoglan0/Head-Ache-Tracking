@@ -7,8 +7,8 @@ import android.database.DatabaseErrorHandler
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.os.Build
-import android.widget.TextView
 import androidx.annotation.RequiresApi
+import com.example.basagrisitakip.models.RecordModel
 import com.google.gson.Gson
 
 @RequiresApi(Build.VERSION_CODES.HONEYCOMB)
@@ -78,24 +78,26 @@ class SQLiteHelperMethods(
         db.close()
     }
 
-    /*fun showRecord(): ArrayList<SuggestionModel> {
+    fun showRecords(): ArrayList<RecordModel> {
         val db: SQLiteDatabase = this.writableDatabase
         val showQuery = "SELECT * FROM $DATABASE_NAME"
         val cursor: Cursor = db.rawQuery(showQuery, null)
-        var suggestionList = ArrayList<SuggestionModel>()
-        var sugg: String
-        var suggId: Int
+        var recordList = ArrayList<RecordModel>()
+        var start: String
+        var end: String
+        var painIntensity: Int
 
         if (cursor.moveToFirst()) {
             do {
-                suggId = cursor.getString(0).toInt()
-                sugg = cursor.getString(1)
-                suggestionList.add(SuggestionModel(suggId, sugg))
+                start = cursor.getString(4)
+                end = cursor.getString(5)
+                painIntensity = cursor.getString(6).toInt()
+                recordList.add(RecordModel(start, end, painIntensity))
             } while (cursor.moveToNext())
         }
 
-        return suggestionList
-    }*/
+        return recordList
+    }
 
 
 }

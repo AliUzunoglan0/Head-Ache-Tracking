@@ -32,17 +32,17 @@ class RecordsAdapter(val context: Context, val recordList: ArrayList<RecordModel
         holder.endTime.text = item.endTime
         holder.intensity.text = item.painIntensity.toString()
 
-        if (item.painIntensity == 1){
+        if (item.painIntensity in 0..17){
             holder.intensityImage.setImageResource(R.drawable.intensity1)
-        } else if (item.painIntensity == 2){
+        } else if (item.painIntensity in 18..35){
             holder.intensityImage.setImageResource(R.drawable.intensity2)
-        } else if (item.painIntensity == 3){
+        } else if (item.painIntensity in 36..51){
             holder.intensityImage.setImageResource(R.drawable.intensity3)
-        } else if (item.painIntensity == 4){
+        } else if (item.painIntensity in 52..69){
             holder.intensityImage.setImageResource(R.drawable.intensity4)
-        } else if (item.painIntensity == 5){
+        } else if (item.painIntensity in 70..87){
             holder.intensityImage.setImageResource(R.drawable.intensity5)
-        } else if (item.painIntensity == 6){
+        } else if (item.painIntensity in 78..100){
             holder.intensityImage.setImageResource(R.drawable.intensity6)
         } else {
             holder.intensityImage.setImageResource(R.drawable.intensity1)

@@ -8,17 +8,21 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.basagrisitakip.R
 import com.example.basagrisitakip.adapters.RecordsAdapter
 import com.example.basagrisitakip.databinding.ActivityRecordsBinding
+import com.example.basagrisitakip.helpers.SQLiteHelperMethods
 import com.example.basagrisitakip.models.RecordModel
 
 class RecordsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRecordsBinding
+    lateinit var sqLiteHelperMethods: SQLiteHelperMethods
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRecordsBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+        sqLiteHelperMethods = SQLiteHelperMethods(this,"record.db",null,1,null)
 
         binding.topAppBar.setNavigationOnClickListener {
             binding.recordsActivityDrawer.openDrawer(Gravity.LEFT)
@@ -41,7 +45,7 @@ class RecordsActivity : AppCompatActivity() {
         }
 
         val recyclerview = binding.recordsRecyclerview
-        val madapter = RecordsAdapter(this,list())
+        val madapter = RecordsAdapter(this,sqLiteHelperMethods.showRecords())
         val llm = LinearLayoutManager(this)
         recyclerview.apply {
             adapter = madapter
